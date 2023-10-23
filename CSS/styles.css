@@ -41,19 +41,19 @@ header {
     text-align: center;
 }
 
-.loader {
-    /* display: inline-block; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: 3px solid lightgray;
-    border-radius: 50%;
-    border-top-color: gray;
-    border-radius: 50%;
-    animation: spin 1s ease-in-out 5, disappear 2s ease-in-out forwards;
-}
+/* .loader { */
+/*  */
+/* position: absolute; */
+/* top: 50%; */
+/* left: 50%; */
+/* width: 50px; */
+/* height: 50px; */
+/* border: 3px solid lightgray; */
+/* border-radius: 50%; */
+/* border-top-color: gray; */
+/* border-radius: 50%; */
+/* animation: spin 1s ease-in-out 5, disappear 2s ease-in-out forwards; */
+/* } */
 
 @keyframes spin {
     0% {
@@ -214,6 +214,13 @@ footer {
     padding: 5px 25px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0.3, 0.3);
     margin-left: -22px;
+    background-color: RGB(233, 236, 239);
+}
+
+.list:hover {
+    cursor: pointer;
+    background-color: #eadef9;
+
 }
 
 .chose {
@@ -233,7 +240,8 @@ footer {
 }
 
 .restaurant-header {
-    padding-left: 5vw;
+    /* padding-left: 5vw; */
+    font-size: 28px;
 }
 
 .cards {
@@ -270,7 +278,7 @@ footer {
 }
 
 .new {
-    padding: 5px;
+    padding: 10px;
     background-color: var(--Tertiary);
     border: none;
     position: absolute;
@@ -290,11 +298,12 @@ footer {
     align-items: center;
 }
 
-.info i {
+/* .info i { */
+/*  */
+/* padding: 1rem; */
+/* font-size: 18px; */
+/* } */
 
-    padding: 1rem;
-    font-size: 18px;
-}
 
 .name h1 {
     font-size: 18px;
@@ -308,6 +317,30 @@ footer {
     padding-left: 5px;
     font-size: 14px;
     text-align: left;
+
+}
+
+
+.card-heart {
+    /* display: flex; */
+    /* flex-direction: row; */
+    position: relative;
+}
+
+.heart-svg {
+
+    cursor: pointer;
+    overflow: visible;
+    width: 36px;
+    margin: 0 10px;
+
+    /* display: inline; */
+    /* position: relative; */
+    /* bottom: 70px; */
+    /* left: 20px; */
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
 
 footer {
@@ -368,9 +401,11 @@ footer {
 
 @media only screen and (min-width: 769px) {
 
-    h1,
-    h2,
-    p {
+    h1
+
+    /* ,h2, */
+    /* p  */
+        {
         font-size: 24px;
     }
 
@@ -424,17 +459,29 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 10px;
     }
 
-    .restaurants-row a {
-        width: 45%;
-    }
+    /* .restaurants-row a { */
+    /* width: 45%; */
+    /* } */
 
     .cards {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px
+    }
+
+    .card-heart {
+        width: 48%;
+
+    }
+
+    .card {
+        flex: 50%;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
 
     .card img {
@@ -444,17 +491,19 @@ footer {
 
     .name p {
         font-size: 24px;
+        font-weight: lighter;
     }
 
     .plate-cat {
         display: block;
         flex-direction: column;
+        width: 30%;
     }
 
     .category {
         display: flex;
-        gap: 25px;
-        padding: 0 20px;
+        gap: 8%;
+        padding: 0 10%;
     }
 
     .menue-header {
@@ -490,9 +539,9 @@ footer {
         font-size: 24px;
     }
 
-    #heart-svg {
-        position: relative;
-        top: -40px;
+    .heart-svg {
+        /* position: relative; */
+        bottom: 14%;
     }
 
     footer {
@@ -553,10 +602,10 @@ footer {
     }
 
 
-    #heart-svg {
+    .heart-svg {
         position: absolute;
         right: 2%;
-        top: 80%;
+        /* bottom: 14%; */
         /* bottom: -20%; */
     }
 

@@ -5,21 +5,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" -->
+    <!-- href="D:/TechSkill/Bootcamp/Integrate%20a%20mobile%20website%20with%20animations%20in%20CSS/project2_ohmyfood\CSS\styles.css" /> -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;family=Shrikhand&amp;display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>ohmyfood</title>
 
 </head>
 
 <body>
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
     <!-- <div class="container"> -->
     <!-- <div class="loader"></div> -->
     <!-- </div> -->
+    <div class="parent__spinner">
+        <div class="loading__spiner"></div>
+    </div>
     <header>
         <div class="logo-location">
             <div class="logo">
@@ -76,132 +82,146 @@
             </div>
         </div>
         <div class="restaurants">
-            <p class="restaurant-header">Restaurants</p>
+            <h1 class="restaurant-header">Restaurants</h1>
             <div class="cards">
                 <div class="restaurants-row">
-                    <a href="./thefullplate.html">
-                        <div class="card">
-                            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                alt="The full Palette">
-                            <div class="new">
-                                <p>New</p>
-                            </div>
-                            <div class="info">
-                                <div class="name">
-                                    <h1>The full Palette</h1>
-                                    <p>New York</p>
+                    <div class="card-heart">
+                        <a href="./thefullplate.html">
+                            <div class="card">
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="The Full Palette">
+                                <div class="new">
+                                    <p>New</p>
                                 </div>
-                                <!-- <i class="fa-regular fa-heart fa-lg"></i> -->
-                                <input type="checkbox" class="checkbox" id="checkbox1" />
-                                <label for="checkbox1">
-                                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-                                            <path id="heart"
-                                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                fill="none" stroke="#000" />
-                                        </g>
-                                    </svg>
-                                </label>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./theenchantedplate.html">
-                        <div class="card">
-                            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enhanced Plate">
-                            <div class="new">
-                                <p>New</p>
-                            </div>
-                            <div class="info">
-                                <div class="name">
-                                    <h1>The Enhanced Plate</h1>
-                                    <p>New York</p>
+                                <div class="info">
+                                    <div class="name">
+                                        <h1>The Full Palette</h1>
+                                        <p>New York</p>
+                                    </div>
                                 </div>
-                                <!-- <i class="fa-solid fa-heart" style="color: #9356DC;"></i> -->
-                                <!-- <i class="fa-solid fa-heart" style="border:1px solid gray; color: #9356DC;"></i> -->
-                                <input type="checkbox" class="checkbox" id="checkbox2" />
-                                <label for="checkbox2">
-                                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-                                            <path id="heart"
-                                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                fill=" none" stroke="#000" />
-                                        </g>
-                                    </svg>
-                                </label>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                        <!-- <i class="fa-regular fa-heart fa-lg"></i> -->
+                        <input type="checkbox" class="checkbox" id="checkbox1" />
+                        <label for="checkbox1">
+                            <svg class="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group1" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path class="heart"
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        fill="none" stroke="#000" />
+                                </g>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="card-heart">
+                        <a href="./theenchantedplate.html">
+                            <div class="card">
+                                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enhanced Plate">
+                                <div class="new">
+                                    <p>New</p>
+                                </div>
+                                <div class="info">
+                                    <div class="name">
+                                        <h1>The Enhanced Plate</h1>
+                                        <p>New York</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- <i class="fa-solid fa-heart" style="color: #9356DC;"></i> -->
+                        <!-- <i class="fa-solid fa-heart" style="border:1px solid gray; color: #9356DC;"></i> -->
+                        <input type="checkbox" class="checkbox" id="checkbox2" />
+                        <label for="checkbox2">
+                            <svg class="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group2" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path class="heart"
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        fill=" none" stroke="#000" />
+                                </g>
+                            </svg>
+                        </label>
+                    </div>
                 </div>
+
                 <div class="restaurants-row">
-                    <a href="./bastille.html">
-                        <div class="card">
-                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille">
-                            <div class="info">
-                                <div class="name">
-                                    <h1>Bastille</h1>
-                                    <p>New York</p>
+                    <div class="card-heart">
+                        <a href="./bastille.html">
+                            <div class="card">
+                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille">
+                                <div class="info">
+                                    <div class="name">
+                                        <h1>Bastille</h1>
+                                        <p>New York</p>
+                                    </div>
                                 </div>
-                                <!-- <i class="fa-regular fa-heart fa-lg"></i> -->
-                                <input type="checkbox" class="checkbox" id="checkbox3" />
-                                <label for="checkbox3">
-                                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-                                            <path id="heart"
-                                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                fill=" none" stroke="#000" />
-                                        </g>
-                                    </svg>
-                                </label>
                             </div>
-                        </div>
-                    </a>
-                    <a href="./legourmand.html">
-                        <div class="card">
-                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                                alt="Le Gourmand">
-                            <div class="info">
-                                <div class="name">
-                                    <h1>Le Gourmand</h1>
-                                    <p>New York</p>
+                        </a>
+                        <!-- <i class="fa-regular fa-heart fa-lg"></i> -->
+                        <input type="checkbox" class="checkbox" id="checkbox3" />
+                        <label for="checkbox3">
+                            <svg class="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group3" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path class="heart"
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        fill=" none" stroke="#000" />
+                                </g>
+                            </svg>
+                        </label>
+                    </div>
+
+                    <div class="card-heart">
+                        <a href="./legourmand.html">
+                            <div class="card">
+                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    alt="Le Gourmand">
+                                <div class="info">
+                                    <div class="name">
+                                        <h1>Le Gourmand</h1>
+                                        <p>New York</p>
+                                    </div>
                                 </div>
-                                <!-- <i class="fa-regular fa-heart fa-lg"></i> -->
-                                <input type="checkbox" class="checkbox" id="checkbox4" />
-                                <label for="checkbox4">
-                                    <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-                                            <path id="heart"
-                                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                                                fill=" none" stroke="#000" />
-                                        </g>
-                                    </svg>
-                                </label>
                             </div>
-                        </div>
-                    </a>
+
+                        </a>
+                        <!-- <i class="fa-regular fa-heart fa-lg"></i> -->
+                        <input type="checkbox" class="checkbox" id="checkbox4" />
+                        <label for="checkbox4">
+                            <svg class="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group4" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path class="heart"
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        fill=" none" stroke="#000" />
+                                </g>
+                            </svg>
+                        </label>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="footer-info">
-                <a href="#" class="restaurant-name no-decoration">Ohmyfood</a>
-                <div class="footer-row">
-                    <a href="#" class="suggest no-decoration">
-                        <i class="fa-solid fa-utensils"></i>
-                        <p>Suggest a restaurant</p>
-                    </a>
 
-                    <a href="#" class="become no-decoration">
-                        <i class="fa-solid fa-handshake-angle"></i>
-                        <p>Become a partener</p>
-                    </a>
-
-                    <a href="#" class="no-decoration">Legal</a>
-                    <a href="mailto:tarekkansowa@gmail.com" title="mail to Tarek Kansowa"
-                        class="no-decoration">Contact</a>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div class="footer-info">
+            <a href="#" class="restaurant-name no-decoration">Ohmyfood</a>
+            <div class="footer-row">
+                <a href="#" class="suggest no-decoration">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>Suggest a restaurant</p>
+                </a>
+
+                <a href="#" class="become no-decoration">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <p>Become a partener</p>
+                </a>
+
+                <a href="#" class="no-decoration">Legal</a>
+                <a href="mailto:tarekkansowa@gmail.com" title="mail to Tarek Kansowa" class="no-decoration">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <!-- </main> -->
 
 </body>
 

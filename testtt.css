@@ -1,0 +1,77 @@
+body {
+    margin: 20px 200px;
+}
+
+.list-check {
+    display: flex;
+}
+
+ul {
+    width: 400px;
+    padding-left: 0;
+}
+
+ul li {
+    list-style-type: none;
+    background-color: #F7F7F7;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+}
+
+.checkbox {
+    display: none;
+}
+
+li .left {
+    width: 100%;
+    transition: 1s;
+}
+
+li .left:hover {
+    cursor: pointer;
+}
+
+.left .plate-cont {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.right {
+    width: 0;
+    background: #F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    transform: translateX(4rem);
+    transition: 1s;
+}
+
+.fa-check-circle {
+    color: #FFF;
+    font-size: 200%;
+    /*   transition: rotate 1s ease-in-out; */
+}
+
+.checkbox:checked+label span .right {
+    /* animation: animationActionBtn 1s ease-in-out both; */
+    width: 90px;
+    transform: translateX(0);
+}
+
+/*  */
+
+.checkbox:checked+label span .right .fa-check-circle {
+    transform: rotate(1turn);
+    transition: 1s;
+}
+
+/* .list-check input:checked+span .right { */
+/* width: 90px; */
+/* transform: translateX(0); */
+/*  */
+/* } */

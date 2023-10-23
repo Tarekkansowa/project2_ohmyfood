@@ -1,3 +1,175 @@
+.parent__spinner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    animation: fade;
+    animation-duration: 0s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+.loading__spiner {
+    /*création du loader*/
+    border: 20px solid white;
+    border-top: 20px solid lightgray;
+    border-bottom: 20px solid gray;
+    border-radius: 50%;
+    /*arrondi des angles*/
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    /*placement milieu de page*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        visibility: visible;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        visibility: visible;
+    }
+
+    to {
+        transform: rotate(360deg);
+        visibility: hidden;
+
+        height: 0;
+        width: 0;
+
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+        display: block;
+    }
+
+    to {
+        opacity: 0;
+        z-index: -100;
+        display: none;
+        height: 0;
+        width: 0;
+        display: none;
+        clip-path: circle(0);
+        /* rognage de la totalité donc disparition*/
+    }
+}
+
+@keyframes monanim {
+    from {
+        overflow: hidden;
+    }
+
+    to {
+        overflow: visible;
+    }
+}
+
+
+.body {
+    animation: monanim;
+    animation-duration: 3s;
+}
+
+
+/* .heart-svg { */
+/*  */
+/* cursor: pointer; */
+/* overflow: visible; */
+/* width: 36px; */
+/* margin: 0 10px; */
+/* } */
+
+svg .heart {
+    transform-origin: center;
+    animation: animateHeartOut .3s linear forwards;
+}
+
+/* .checkbox { */
+/* display: none; */
+/* } */
+/*  */
+/* label { */
+/* height: 50px; */
+/* } */
+/*  */
+/* .plate { */
+/* display: flex; */
+/* justify-content: space-between; */
+/* } */
+/*  */
+/* li .left { */
+/* flex: 9; */
+/* } */
+/*  */
+/* li .right { */
+/* flex: 1; */
+/* } */
+/*  */
+/* .price { */
+/* justify-content: left; */
+/* margin-right: -10%; */
+/* } */
+
+.checkbox:checked+label svg .heart {
+    /*   transform: scale(0.2); */
+    transform: translateY(0);
+    fill: #9356DC;
+    animation: fillHeart 5s ease-in-out forwards;
+}
+
+@keyframes animateHeartOut {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fillHeart {
+    0% {
+        fill: transparent;
+        transform: scale(1);
+    }
+
+    40% {
+        fill: #9356DC;
+        transform: scale(1.1);
+    }
+
+    100% {
+        fill: #9356DC;
+        transform: scale(1);
+    }
+}
+
+
 ul {
     text-decoration: none;
 }
@@ -49,75 +221,61 @@ li:nth-child(4) {
     }
 }
 
-#heart-svg {
-
-    cursor: pointer;
-    overflow: visible;
-    width: 36px;
-    margin: 0 10px;
-}
-
-svg #heart {
-    transform-origin: center;
-    animation: animateHeartOut .3s linear forwards;
+ul li {
+    list-style-type: none;
+    background-color: #F7F7F7;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
 }
 
 .checkbox {
     display: none;
 }
 
-label {
-    height: 50px;
+li .plate-info {
+    width: 100%;
+    transition: 1s;
 }
 
-.plate {
+li .plate-info:hover {
+    cursor: pointer;
+}
+
+.plate-info .plate-cont {
     display: flex;
     justify-content: space-between;
+    /* padding-right: 20px; */
 }
 
-li .left {
-    flex: 9;
+li .plate-cHoose {
+    width: 0;
+    background: var(--Tertiary);
+    display: flex;
+    line-height: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    transform: translateX(4rem);
+    transition: 1s;
 }
 
-li .right {
-    flex: 1;
+.fa-check-circle {
+    color: #FFF;
+    font-size: 200%;
+    /*   transition: rotate 1s ease-in-out; */
 }
 
-.price {
-    /* justify-content: left; */
-    margin-right: -10%;
+.checkbox:checked+label li .plate-cHoose {
+    /*   animation: animationActionBtn 1s ease-in-out both; */
+    width: 110px;
+
+    transform: translateX(0);
 }
 
-.checkbox:checked+label svg #heart {
-    /*   transform: scale(0.2); */
-    transform: translateY(0);
-    fill: #9356DC;
-    animation: fillHeart 5s ease-in-out forwards;
-}
-
-@keyframes animateHeartOut {
-    0% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes fillHeart {
-    0% {
-        fill: transparent;
-        transform: scale(1);
-    }
-
-    40% {
-        fill: #9356DC;
-        transform: scale(1.1);
-    }
-
-    100% {
-        fill: #9356DC;
-        transform: scale(1);
-    }
+.checkbox:checked+label li .plate-cHoose .fa-check-circle {
+    transform: rotate(1turn);
+    transition: 1s;
 }
