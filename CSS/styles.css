@@ -502,9 +502,18 @@ footer {
 
     .category {
         display: flex;
-        gap: 8%;
-        padding: 0 10%;
+        gap: 3%;
+        padding: 0 4%;
     }
+
+    .plate {
+        height: 75px;
+    }
+
+    .plate-name {
+        padding-top: 15px;
+    }
+
 
     .menue-header {
         padding: 0 100px 20px 100px;
@@ -520,7 +529,7 @@ footer {
     }
 
     .btn-order {
-        width: 35%;
+        width: 25%;
     }
 
     .logo-location {
@@ -607,6 +616,20 @@ footer {
         right: 2%;
         /* bottom: 14%; */
         /* bottom: -20%; */
+    }
+
+    .category {
+        display: flex;
+        gap: 8%;
+        padding: 0 10%;
+    }
+
+    .plate {
+        height: 65px;
+    }
+
+    .btn-order {
+        width: 20%;
     }
 
     .footer-info i {

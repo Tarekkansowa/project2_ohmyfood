@@ -85,9 +85,10 @@ main {
 }
 
 .plate-name {
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     font-weight: bold;
     text-align: left;
+    /* padding-top: 15px; */
 }
 
 .plate-cont {
@@ -102,12 +103,17 @@ main {
 
 }
 
+.price {
+    margin-top: 10px;
+}
+
 .cont {
-    max-width: 190px;
+    width: 160px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
+    padding-top: 10px;
 }
 
 .order {
