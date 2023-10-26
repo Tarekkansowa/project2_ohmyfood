@@ -1,5 +1,5 @@
-/* @import url("./menue.css"); */
-/* @import url("./animation.css"); */
+@import "menue.css";
+@import "animation.css";
 
 html {
     display: block;
@@ -16,7 +16,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: block;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -99,7 +99,7 @@ footer {
 
 .location i {
     padding-right: 1dvb;
-    font-size: 3vw;
+    font-size: 20px;
 }
 
 .location p {
@@ -166,7 +166,7 @@ footer {
 }
 
 .row {
-    max-width: 75%;
+    max-width: 80%;
     margin: 1rem;
     border-radius: 25px;
     display: flex;
@@ -403,6 +403,10 @@ footer {
         margin-left: 0;
         margin-right: 0;
 
+    }
+
+    .location i {
+        font-size: 24px;
     }
 
     .how-it-works {
