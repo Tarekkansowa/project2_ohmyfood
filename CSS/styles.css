@@ -1,5 +1,5 @@
-@import "menue.css";
-@import "animation.css";
+@import url("menue.css");
+@import url("animation.css");
 
 html {
     display: block;
@@ -425,7 +425,8 @@ footer {
     }
 
     .list {
-        width: 400px
+        width: 400px;
+        height: 70px;
     }
 
     .book-menue p {
