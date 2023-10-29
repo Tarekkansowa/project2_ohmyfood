@@ -160,9 +160,13 @@ footer {
 
 .how-works {
 
-    font-size: 10vw;
+    /* font-size: 30px; */
     font-weight: 600;
     display: flex;
+}
+
+.how-works p {
+    font-size: 24px;
 }
 
 .row {
@@ -229,6 +233,8 @@ footer {
 .restaurant-header {
     /* padding-left: 5vw; */
     font-size: 28px;
+    text-align: left;
+    padding-left: 15px;
 }
 
 .cards {
@@ -496,8 +502,8 @@ footer {
 
     .category {
         display: flex;
-        gap: 3%;
-        padding: 0 4%;
+        /* gap: 3%; */
+        padding: 0 1%;
     }
 
     .plate {
@@ -524,6 +530,10 @@ footer {
 
     .btn-order {
         width: 25%;
+    }
+
+    .cont {
+        width: 190px;
     }
 
     .logo-location {
