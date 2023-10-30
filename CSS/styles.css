@@ -1,4 +1,4 @@
-@import url("./menue.css");
+@import url("./menu.css");
 @import url("./animation.css");
 
 html {
@@ -108,7 +108,7 @@ footer {
 }
 
 
-.menue-info {
+.menu-info {
     margin-left: auto;
     margin-right: auto;
     /* width: 400px; */
@@ -119,13 +119,13 @@ footer {
     background-color: RGB(233, 236, 239);
 }
 
-.book-menue {
+.book-menu {
     width: 90%;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.book-menue p {
+.book-menu p {
     font-size: 24px;
     font-weight: 700;
 }
@@ -139,7 +139,7 @@ footer {
 
 .btn {
     /* width: 70%; */
-    margin: 25px auto;
+    margin: 0 0 25px 0;
     cursor: pointer;
     padding: 1rem;
     border-radius: 3rem;
@@ -404,7 +404,7 @@ footer {
         font-size: 24px;
     }
 
-    .menue-info {
+    .menu-info {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -435,7 +435,7 @@ footer {
         height: 70px;
     }
 
-    .book-menue p {
+    .book-menu p {
         font-size: 36px;
     }
 
@@ -515,7 +515,7 @@ footer {
     }
 
 
-    .menue-header {
+    .menu-header {
         padding: 0 100px 20px 100px;
     }
 
