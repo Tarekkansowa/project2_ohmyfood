@@ -43,7 +43,7 @@ main {
 }
 
 .menu-header {
-    font-family: 'Shrikhand', 'Franklin Gothic Medium';
+    font-family: 'Shrikhand', 'Franklin Gothic Medium' 'Helvetica', 'sans-serif';
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
@@ -55,6 +55,7 @@ main {
 
 .menu-header h1 {
     font-size: 28px;
+    font-family: 'Shrikhand', 'Franklin Gothic Medium';
 }
 
 .cat-name {
