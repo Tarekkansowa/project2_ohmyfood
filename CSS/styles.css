@@ -342,17 +342,11 @@ footer {
 
 }
 
-.no-decoration {
-    text-decoration: none;
-    color: white;
-    text-align: left;
-}
 
 .footer-info a {
     font-size: 28px;
     font-weight: bold;
     padding-bottom: 10px;
-    font-family: 'Shrikhand', 'Franklin Gothic Medium';
 }
 
 .footer-row {
@@ -387,6 +381,19 @@ footer {
 .become {
     display: flex;
     align-items: center;
+}
+
+
+.no-decoration {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    /* font-family: 'Shrikhand', 'Franklin Gothic Medium'; */
+}
+
+.legal,
+.contact {
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
 }
 
 @media only screen and (min-width: 769px) {
